@@ -1,0 +1,45 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+{% endblock %} {% block content %}
+
+<div class="container">
+  <center>
+    <h2 class="title">Password Generator</h2>
+  </center>
+
+  <form method="GET" action="{% url 'generator:get_password' %}">
+    <label for="length">Length</label>
+    <input type="range" name="length" id="length" min="7" max="20" value="10" />
+    <br />
+
+    <label for="numbers">Numbers</label>
+    <input type="checkbox" name="numbers" id="numbers" checked />
+    <br />
+
+    <label for="uppercase">Uppercases</label>
+    <input type="checkbox" name="uppercase" id="uppercase" checked />
+    <br />
+
+    <label for="special-characters">Special Characters</label>
+    <input type="checkbox" name="special-characters" id="special-characters" />
+    <br />
+
+    {% if password %}
+    <br />
+    <div class="password-container">
+      <h3>👉 {{ password }}</h3>
+    </div>
+    <br />
+    {% endif %}
+
+    <button type="submit" class="submit-button">{{ message }}</button>
+  </form>
+</div>
+
+<div class="toast-container"></div>
+
+{% endblock %} 
+
+{% block js %}
+<script src="{% static 'js/code.js' %}"></script>
+{% endblock %}
