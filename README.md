@@ -1,6 +1,6 @@
 # SIMPLE PASSWORD GENERATOR
 
-Generador de contraseñas usando _[Django]_(https://www.djangoproject.com/) y guiandome del curso _[Django 3 - Full Stack Websites with Python Web Development]_(https://zappycode.com/courses/django-3-make-websites-with-python-tutorial-beginner-learn-bootstrap).
+Generador de contraseñas usando [Django](https://www.djangoproject.com/) y guiandome del curso [Django 3 - Full Stack Websites with Python Web Development](https://zappycode.com/courses/django-3-make-websites-with-python-tutorial-beginner-learn-bootstrap).
 
 ## REQUISITOS
 
