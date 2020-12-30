@@ -16,7 +16,7 @@ pip install -r requirements.txt
 
 ## PARTICULARIDADES
 
-Se usa un formulario con el metodo POST para generar la contraseña y esta no se muestre en el query de la barra de direcciones. Para transportar la contraseña desde su generación en el backend hasta mostrarla en el frontend se uso _django.messages_
+Se usa un formulario con el metodo GET para generar la contraseña. Para transportar la contraseña desde su generación en el backend hasta mostrarla en el frontend se hace uso de un view en el action del formulario.
 
 ## Licencia
 
